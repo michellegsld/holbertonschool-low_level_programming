@@ -1,2 +1,2 @@
-#!/bin/bash
-gcc $CFILE $CFILE.s
+#!/bin/bashi
+gcc $CFILE -o $CFILE.s
