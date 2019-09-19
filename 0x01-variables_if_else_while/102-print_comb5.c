@@ -15,12 +15,12 @@ int main(void)
 
 	for (n = 0; n < 10; n++)
 		for (i = 0; i <= 9; i++)
-		{
-			if ((n == 0) && (i == 0))
-				q = i;
-			else
-				q = i + 1;
 			for (j = n; j <= 9; j++)
+			{
+				if (j > n)
+					q = 0;
+				else
+					q = i + 1;
 				for (; q <= 9; q++)
 				{
 					putchar(n + '0');
@@ -34,8 +34,8 @@ int main(void)
 						putchar(' ');
 					}
 				}
+			}
 
-		}
 		putchar('\n');
 
 	return (0);
