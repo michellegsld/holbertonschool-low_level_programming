@@ -17,16 +17,20 @@ int main(void)
 	{
 		for (i = 0; i <= 9; i++)
 		{
-			for (j = 0; j <= 9; j++)
+			for (j = n; j <= 9; j++)
 			{
-				for (q = 0; q <= 9; q++)
+				if (i == 0)
+					q = i;
+				else
+					q = i + 1;
+				for (; q <= 9; q++)
 				{
 					putchar(n + '0');
 					putchar(i + '0');
 					putchar(' ');
 					putchar(j + '0');
 					putchar(q + '0');
-					if (!((j == 9) && (q == 9)))
+					if (!((n == 9) && (i == 8) && (j == 9) && (q == 9)))
 					{
 						putchar(',');
 						putchar(' ');
@@ -35,6 +39,7 @@ int main(void)
 			}
 		}
 	}
+
 
 	putchar('\n');
 
