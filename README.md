@@ -10,4 +10,5 @@ These are the folders within this repo:
 0x00-hello_world : learn basics of C like what gcc is and how to use it.
 
 0x01-variables_if_else_while : learn more C, use operators as well as
-			       variables.
+			       variables. Got to use a lot more for-loops and if-statements.
+			       Nested a lot.
