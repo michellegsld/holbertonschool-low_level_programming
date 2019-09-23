@@ -12,3 +12,5 @@ These are the folders within this repo:
 0x01-variables_if_else_while : learn more C, use operators as well as
 			       variables. Got to use a lot more for-loops and if-statements.
 			       Nested a lot.
+
+0x02-functions_nested_loops : Learn about C Functions, Header files, and nested while loops
