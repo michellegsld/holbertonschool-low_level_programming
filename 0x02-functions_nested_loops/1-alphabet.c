@@ -2,8 +2,6 @@
 
 /**
  * print_alphabet - prints the alphabet in lowercase, followed by a newline.
- *
- * Return: Always void.
  */
 void print_alphabet(void)
 {
