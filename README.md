@@ -14,3 +14,5 @@ These are the folders within this repo:
 			       Nested a lot.
 
 0x02-functions_nested_loops : Learn about C Functions, Header files, and nested while loops
+
+0x03-debugging : Learn what debugging is, some methods in debugging manually and how to read error messages.
