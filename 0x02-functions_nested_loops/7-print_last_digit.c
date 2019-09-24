@@ -2,16 +2,18 @@
 
 /**
  * print_last_digit - Prints the last digit of the parameter.
- * @n: A number that will become positive. l is given it's last digit.
+ * @n: We need the last digit of the absolute value of n.
  *
- * Return: Always l.
+ * Return: Always n.
  */
 int print_last_digit(int n)
 {
 	if (n < 0)
 		n = -n;
 
-	int l = n % 10;
+	n = n % 10;
 
-	return (l);
+	_putchar(n + '0');
+
+	return (n);
 }
