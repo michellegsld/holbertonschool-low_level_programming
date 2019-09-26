@@ -11,7 +11,7 @@ void print_triangle(int n)
 	if (n > 0)
 		for (loop = 0; loop < n; loop++)
 		{
-			for (spaces = n; spaces > loop; spaces--)
+			for (spaces = n - 1; spaces > loop; spaces--)
 				_putchar(' ');
 			for (amount = 0; amount <= loop; amount++)
 				_putchar('#');
