@@ -18,3 +18,5 @@ These are the folders within this repo:
 0x03-debugging : Learn what debugging is, some methods in debugging manually and how to read error messages.
 
 0x04-more_functions_nested_loops : Learn more about nested loops and about functions.
+
+0x05-pointers_arrays_strings : We start getting into pointers, arrays, and strings. We learn about what they are as well as how to use them, even with eachother.
