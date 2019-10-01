@@ -6,12 +6,8 @@
  */
 void rev_string(char *s)
 {
-	int i, len = 0, j = 0;
-
-	while (s[len] != '\0')
-		len++;
-
-	char copy[len];
+	int i, j = 0;
+	char copy[10];
 
 	for (i = 0; s[i] != '\0'; i++)
 		copy[i] = s[i];
