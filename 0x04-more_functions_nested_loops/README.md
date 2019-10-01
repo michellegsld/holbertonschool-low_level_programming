@@ -23,3 +23,7 @@ File name : Function description
 9-fizz_buzz.c : Prints numbers from 1 to 100, followed by new line. Multiples of 3 print "Fizz" while multiples of 5 print "Buzz". If it's both then it prints "FizzBuzz".
 
 10-print_triangle : Prints a triangle, followed by a new line.
+
+100-prime_factor.c : Prints the largest prime factor of a specific number, followed by a newline.
+
+101-print_number.c : Prints an integer.
