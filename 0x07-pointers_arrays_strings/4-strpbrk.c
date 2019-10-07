@@ -9,21 +9,11 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int  i, j, length_s = 0, length_a = 0;
+	int  i, j;
 	char *pointer = '\0';
 
-	while (s[length_s] != '\0')
-		length_s++;
-
-	length_s++;
-
-	while (s[length_a] != '\0')
-		length_a++;
-
-	length_a++;
-
-	for (i = 0; i < length_s; i++)
-		for (j = 0; j < length_a; j++)
+	for (i = 0; s[i] != '\0'; i++)
+		for (j = 0; accept[j] != '\0'; j++)
 			if (s[i] == accept[j])
 			{
 				pointer = (s + i);
