@@ -12,6 +12,9 @@ char *_strstr(char *haystack, char *needle)
 	int  i = 0, j = 0, counter = 0, sub_len, start;
 	char *pointer = '\0';
 
+	if (*haystack == '\0')
+		return (haystack);
+
 	while (needle[sub_len] != '\0')
 		sub_len++;
 
