@@ -9,7 +9,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int  i = 0, j = 0, counter = 0, sub_len;
+	int  i = 0, j = 0, counter = 0, sub_len, start;
 	char *pointer = '\0';
 
 	while (needle[sub_len] != '\0')
@@ -20,15 +20,18 @@ char *_strstr(char *haystack, char *needle)
 		if (haystack[i] == needle[j])
 		{
 			counter++;
+			if (counter == 1)
+				start = i;
 			if (counter == sub_len)
 			{
-				pointer = ((haystack + i + 1) - sub_len);
+				pointer = (haystack + start);
 				return (pointer);
 			}
 		}
 		else
 		{
 			counter = 0;
+			start = 0;
 			j = -1;
 		}
 	}
