@@ -11,7 +11,7 @@ char *_strchr(char *s, char c)
 {
 	int i = 0, length = 0;
 	char *pointer = s;
-	
+
 	while (s[length] != '\0')
 		length++;
 
