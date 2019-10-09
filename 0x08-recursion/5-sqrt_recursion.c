@@ -9,7 +9,7 @@
  */
 int math(int num, int n)
 {
-	if ((num * num) > n)
+	if ((n / 2) < num)
 		return (-1);
 	else if ((num * num) != n)
 		return (math(num++, n));
