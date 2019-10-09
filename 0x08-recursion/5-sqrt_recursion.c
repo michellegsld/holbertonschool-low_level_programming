@@ -9,12 +9,12 @@
  */
 int math(int num, int n)
 {
-	if (num * num > n)
+	if ((num * num) > n)
 		return (-1);
-	else if ((num * num) == n)
-		return (num);
-	else
+	else if ((num * num) != n)
 		return (math(num++, n));
+	else
+		return (num);
 }
 
 /**
@@ -27,6 +27,5 @@ int _sqrt_recursion(int n)
 {
 	if (n > 0)
 		return (math(1, n));
-	else
-		return (-1);
+	return (-1);
 }
