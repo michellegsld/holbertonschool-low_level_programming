@@ -17,3 +17,5 @@ File name : function description
 6-is_prime_number.c : Returns 1 if the input is a prime number, otherwise return 0.
 
 7-is_palidrome.c : Returns 1 if a string is a palindrome and 0 if not.
+
+100-wildcmp.c : Compares two strings and returns 1 or 0 depending on if they are idenitical. Accounts for *
