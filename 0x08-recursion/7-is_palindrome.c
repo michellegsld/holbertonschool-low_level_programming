@@ -54,12 +54,12 @@ int palindrome_check(char *s, int f, int b, int end, int flag)
 {
 	int check = 0;
 
+	if (s[f] != s[b])
+		return (0);
 	if (flag == 0)
 		check = 1;
 	if (f + check == end && b == end)
 		return (1);
-	else if (s[f] == s[b])
-		return (palindrome_check(s, f + 1, b - 1, end, flag));
-	else
-		return (0);
+
+	return (palindrome_check(s, f + 1, b - 1, end, flag));
 }
