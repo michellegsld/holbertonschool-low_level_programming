@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
-	if (argc > 1)
+	if (argc > 2)
 	{
 		for (; i < argc; i++)
 		{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	}
 
 	printf("\n");
-	
+
 	return (0);
 }
 
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 int pos_check(char *s)
 {
 	if (!isdigit(*s))
-		return (0);	
+		return (0);
 
 	return (1);
 }
