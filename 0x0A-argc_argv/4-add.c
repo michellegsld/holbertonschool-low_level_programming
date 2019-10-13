@@ -30,6 +30,8 @@ int main(int argc, char *argv[])
 		}
 		printf("%d", sum);
 	}
+	else
+		printf("0");
 
 	printf("\n");
 
