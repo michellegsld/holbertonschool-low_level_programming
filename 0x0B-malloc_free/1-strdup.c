@@ -17,10 +17,10 @@ char *_strdup(char *str)
 
 	newstr = malloc(len * sizeof(char));
 
-	if (len == 0 || newstr == NULL)
+	if (len == 0 || newstr == NULL || str == NULL)
 		return (NULL);
 
-	for (; i < len; i++)
+	for (; i <= len; i++)
 		newstr[i] = str[i];
 
 	return (newstr);
