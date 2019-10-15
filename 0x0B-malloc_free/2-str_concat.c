@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	if (lenb == 1)
-		str[0] = '\0';
+		str = "";
 	else
 	{
 		for (; i < len1; i++, j++)
