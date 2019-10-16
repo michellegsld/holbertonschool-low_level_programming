@@ -1,5 +1,5 @@
 #include <stdio.h>
-ii
+
 /**
  * main - Entry point
  *
@@ -7,12 +7,7 @@ ii
 */
 int main(void)
 {
-	char q[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\0";
-	int i;
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 
-	for (i = 0; q[i] != '\0'; i++)
-		putchar(q[i]);
-
-	putchar('\n');
 	return (1);
 }
