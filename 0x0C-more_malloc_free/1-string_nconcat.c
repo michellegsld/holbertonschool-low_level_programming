@@ -34,8 +34,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 
-	if (len1 == 0 && len2 == 0)
-		str = '\0';
+	if (lent == 1)
+		str[0] = '\0';
 	else
 	{
 		for (; i < len1; i++)
