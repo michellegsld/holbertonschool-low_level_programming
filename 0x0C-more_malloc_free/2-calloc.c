@@ -22,6 +22,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	_memset(array, size, nmemb);
+
+	return (array);
 }
 
 /**
