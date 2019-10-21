@@ -14,11 +14,11 @@ char *_strcpy(char *dest, char *src);
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int namelen = _strlen(name);
-	int ownerlen = _strlen(owner);
-	dog_t *new_dog;
+	int namelen = _strlen(name) + 1;
+	int ownerlen = _strlen(owner) + 1;
+	struct dog *new_dog;
 
-	new_dog = malloc(sizeof(dog_t));
+	new_dog = malloc(sizeof(struct dog));
 	if (new_dog == NULL)
 		return (NULL);
 
