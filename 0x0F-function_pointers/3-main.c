@@ -28,7 +28,13 @@ int main(int argc, char *argv[])
 	}
 
 	func = (get_op_func(op));
-	answer = (func(num1, num2));
+	answer = (*func)(num1, num2);
+
+	if (answer == NULL)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
 	printf("%d\n", answer);
 	return (0);
