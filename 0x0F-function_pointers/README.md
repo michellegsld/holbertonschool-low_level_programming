@@ -5,6 +5,7 @@
 <h4>A directory within the holbertonschool-low_level_programming repo.</h4>
 We Will learn about function pointers as well as how and why use them. We shall create our own and our own functions.
 
+<table style="width:100%">
 <tr>
 <th>file name</th>
 <th>description</th>
@@ -37,3 +38,7 @@ We Will learn about function pointers as well as how and why use them. We shall 
 <td>3-calc.h</td>
 <td>Contains all function prototypes and data structures used by the program starting with 3.</td>
 </tr>
+</table>
+
+</body>
+</html>
