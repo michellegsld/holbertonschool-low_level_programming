@@ -27,14 +27,15 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	func = (get_op_func(op));
-	answer = (*func)(num1, num2);
-
-	if (answer == NULL)
+	if (*op != '+' && *op != '-' && *op != '*' && *op != '/'
+			&& *op != '%' && argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
+
+	func = (get_op_func(op));
+	answer = (*func)(num1, num2);
 
 	printf("%d\n", answer);
 	return (0);
