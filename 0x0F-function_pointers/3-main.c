@@ -9,10 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[3]);
-	char *optr = argv[2];
-	char op = argv[2][0];
+	int i = 0;
 	int (*func)(int num1, int num2);
 
 	if (argc != 4)
@@ -21,21 +18,20 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if ((op == '/' || op == '%') && num2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
+	func = get_op_func(argv[2]);
 
-	if (op != '+' && op != '-' && op != '*' && op != '/'
-			&& op != '%' && argv[2][1] != '\0')
+	if (func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	func = get_op_func(optr);
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && atoi(argv[3]) == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
-	printf("%d\n", func(num1, num2));
+	printf("%d\n", func(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
