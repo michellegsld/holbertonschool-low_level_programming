@@ -9,7 +9,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
 	int (*func)(int num1, int num2);
 
 	if (argc != 4)
