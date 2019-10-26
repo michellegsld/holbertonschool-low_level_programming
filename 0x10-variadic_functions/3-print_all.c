@@ -8,14 +8,13 @@ void print_all(const char * const format, ...)
 {
 	va_list list;
 	char *arg;
-	unsigned int i = 0, check = 1;
+	unsigned int i = 0;
 
 	while (format != NULL)
 	{
 		va_start(list, format);
 		while (format[i] != '\0')
 		{
-			check = 1;
 			switch (format[i])
 			{
 				case 'c':
@@ -35,10 +34,9 @@ void print_all(const char * const format, ...)
 						printf("(nil)");
 					break;
 				default:
-					check = 0;
 					break;
 			}
-			if ((check == 1) && (format[i + 1] != '\0'))
+			if ((format[i + 1] != '\0'))
 				printf(", ");
 			i++;
 		}
