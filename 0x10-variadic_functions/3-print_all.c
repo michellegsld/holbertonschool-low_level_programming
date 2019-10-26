@@ -11,10 +11,10 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	int check = 1;
 
-	va_start(list, format);
-
 	while (format != NULL)
 	{
+		va_start(list, format);
+
 		while (format[i] != '\0')
 		{
 			check = 1;
@@ -46,10 +46,9 @@ void print_all(const char * const format, ...)
 			i++;	
 		}
 
+		printf("\n");
+		va_end(list);
+
 		break;
 	}
-
-	printf("\n");
-
-	va_end(list);
 }
