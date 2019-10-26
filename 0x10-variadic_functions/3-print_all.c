@@ -6,7 +6,6 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list list;
 	char *arg;
 	unsigned int i = 0, check = 0;
 	va_list list;
