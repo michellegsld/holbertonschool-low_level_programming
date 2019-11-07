@@ -4,6 +4,8 @@
  * get_bit - Returns the value of a bit at a given index
  * @n: The number to whose bit must be returned
  * @index: Gives the position of what bit to return
+ *
+ * Return: Either the bit value or -1
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
@@ -13,7 +15,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	for (i = 0; i != 65; i++)
 		str[i] = '\0';
-	
+
 	for (i = 0; len != 0;)
 	{
 		if (var >= len)
@@ -23,4 +25,6 @@ int get_bit(unsigned long int n, unsigned int index)
 		}
 		len = len / 10;
 	}
+
+	return (-1);
 }
