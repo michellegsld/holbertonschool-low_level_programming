@@ -8,24 +8,20 @@
  */
 int main(void)
 {
-	long sum = 0, prev1 = 0, prev2 = 1;
+	long sum = 0, prev1 = 0, prev2 = 1, total = 0;
 
 	while ((prev1 + prev2) < 4000000)
 	{
 		sum = prev1 + prev2;
 
-		if (sum % 2 == 0 || sum == 1)
-		{
-			if (sum > 1)
-				printf(", ");
-			printf("%ld", sum);
-		}
+		if (sum % 2 == 0)
+			total += sum;
 
 		prev1 = prev2;
 		prev2 = sum;
 	}
 
-	printf("\n");
+	printf("%ld\n", total);
 
 	return (0);
 }
