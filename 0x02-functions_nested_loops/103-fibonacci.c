@@ -14,9 +14,9 @@ int main(void)
 	{
 		sum = prev1 + prev2;
 
-		if (sum % 2 == 0)
+		if (sum % 2 == 0 || sum == 1)
 		{
-			if (sum > 2)
+			if (sum > 1)
 				printf(", ");
 			printf("%ld", sum);
 		}
