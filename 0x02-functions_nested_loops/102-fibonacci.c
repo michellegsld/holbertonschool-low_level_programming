@@ -6,20 +6,24 @@
  * Starts with 1 and 2, followed by a newline..
  * Return: Always 0.
  */
-void main(void)
+int main(void)
 {
 	int counter = 0;
-	unsigned long int sum = 0;
+	long sum = 1, prev = 0;
 
 	for (; counter < 50; counter++)
 	{
-		sum = sum + counter;
-		if (sum > 0)
-		{
-			printf("%d", sum);
-			if (counter != 49)
-				printf(", ");
-		}
+		prev = sum;
+
+		if (counter > 0)
+			sum = prev + sum;
+
+		printf("%ld", sum);
+		
+		if (counter < 49)
+			printf(", ");
+		else
+			printf("\n");
 	}
 	return (0);
 }
