@@ -7,24 +7,21 @@
  */
 int main(void)
 {
-	long int i;
-	long int j;
+	long int i = 612852475143;
+	long int j = 2;
 
-	for (i = 612852475143; i > 1; i--)
+	while (i > j)
 	{
-		for (j = 2; j < 612852475143; j++)
+		if (i % j == 0)
 		{
-			if (i * j == 612852475143)
-			{
-				if (i % 2 != 0 && i % 5 != 0)
-				{
-					printf("%ld\n", i);
-					i = 0;
-					break;
-				}
-			}
+			i = i / j;
+			j = 2;
 		}
+		else
+			j = j + 1;
 	}
+
+	printf("%ld\n", j);
 
 	return (0);
 }
