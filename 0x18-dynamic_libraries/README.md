@@ -22,6 +22,10 @@
 <td>1-create_dynamic_lib.sh</td>
 <td>A script that creates the dynamic library <code>liball.so</code> from every <code>.c</code> file in the current directory.</td>
 </tr>
+<tr>
+<td>100-operations.so</td>
+<td>A dynamic library containing the math operation functions for integers: addition, subtraction, multiplication, division, and modulos. Can work with a main file written in Python instead of C."</td>
+</tr>
 </table>
 
 </body>
