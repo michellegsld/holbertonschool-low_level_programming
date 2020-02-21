@@ -10,6 +10,5 @@ clean: *~ $(NAME)
 	$(RM) *~ $(NAME)
 oclean: $(SRC)
 	$(RM) $(OBJ)
-fclean: *~ $(OBJ) $(NAME)
-	$(RM) *~ $(OBJ) $(NAME)
-re: oclean all
+fclean: clean oclean
+re: oclean $(OBJ) all
