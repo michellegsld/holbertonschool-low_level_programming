@@ -1,10 +1,10 @@
 CC = gcc
 SRC = main.c holberton.c
-OBJ = main.o holberton.o
+OBJ = $(*.o)
 NAME = holberton
 main.o: main.c m.h
-	gcc -c main.c
+	$(CC) -c main.c
 holberton.o: holberton.c m.h
-	gcc -c holberton.c
+	$(CC) -c holberton.c
 all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
