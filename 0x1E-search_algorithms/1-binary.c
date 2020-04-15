@@ -23,8 +23,6 @@ int binary_search(int *array, size_t size, int value)
 		{
 			if (middle < end)
 				print_array(array, middle, end);
-			else
-				printf("Searching in array: %d\n", array[middle]);
 			return (middle);
 		}
 
