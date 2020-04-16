@@ -20,12 +20,10 @@ int binary_search(int *array, size_t size, int value)
 	while (start <= end)
 	{
 		print_array(array, start, end);
-		middle = start + middle / 2;
+		middle = (start + end) / 2;
 
 		if (array[middle] == value)
 		{
-			if (middle < end)
-				print_array(array, middle, end);
 			return (middle);
 		}
 
