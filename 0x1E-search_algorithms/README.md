@@ -11,3 +11,5 @@
 | 5-O | What is the `space complexity` (worst case) of a binary search in an array of size `n`? |
 | 6-O | The answer to the space complexity of a function/algorithm. |
 | 101-O | What is the `time complexity` (average case) of a jump search in an array of size `n`, using `step = sqrt(n)`? |
+| 107-O | What is the `time complexity` (average case) of a jump search in a singly linked list of size `n`, using `step = sqrt(n)`? |
+| 108-O | What is the `time complexity` (average case) of a jump search in a skip list of size `n`, with an express lane using `step = sqrt(n)`? |
